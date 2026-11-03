@@ -163,4 +163,57 @@ final class SiroNavTests: XCTestCase {
         XCTAssertGreaterThan(listener.finalTotals!.distanceKm, 0.4)
         XCTAssertGreaterThan(listener.finalTotals!.fare, 0.50)
     }
+
+    func testDeveloperFareConfigCustomOptions() {
+        // Test custom developer tariff parameters: baseFare, perKm, perWaitingMinute, currency
+        let fareSAR = NavFareConfig(
+            baseFare: 5.0,             // 5 SAR base
+            perKilometer: 1.75,         // 1.75 SAR per KM
+            perWaitingMinute: 0.50,     // 0.50 SAR per minute waiting
+            currency: "SAR",
+            waitingSpeedKmh: 4.0
+        )
+        let meterSAR = NavTripMeter(config: fareSAR)
+        let t0 = Date()
+
+        // 1. Driving phase: 2.0 km at 50 km/h (no waiting)
+        var lat = 24.7136
+        _ = meterSAR.addFix(NavPoint(latitude: lat, longitude: 46.6753, speedKmh: 50.0, accuracy: 5, timestamp: t0))
+        for i in 1...20 {
+            lat += 0.0009 // ~100m per step
+            _ = meterSAR.addFix(NavPoint(latitude: lat, longitude: 46.6753, speedKmh: 50.0, accuracy: 5, timestamp: t0.addingTimeInterval(Double(i))))
+        }
+
+        // 2. Waiting phase: standing still for 3 minutes (180 seconds)
+        for i in 1...6 {
+            _ = meterSAR.addFix(NavPoint(latitude: lat, longitude: 46.6753, speedKmh: 0.0, accuracy: 5, timestamp: t0.addingTimeInterval(20.0 + Double(i * 30))))
+        }
+
+        let totals = meterSAR.totals
+        XCTAssertEqual(totals.currency, "SAR")
+        XCTAssertGreaterThan(totals.distanceKm, 1.8)
+        XCTAssertGreaterThan(totals.waitingMinutes, 2.0)
+        // Base(5) + 2km * 1.75(3.5) + 3min * 0.50(1.5) ~= 10.0 SAR
+        XCTAssertGreaterThan(totals.fare, 9.0)
+        XCTAssertTrue(totals.fareLabel.contains("SAR"))
+    }
+
+    func testRoundaboutVoiceExitResolution() {
+        let engine = NavVoiceEngine()
+        // Roundabout entrance at 500m
+        let prompt500 = engine.resolvePromptId(maneuverType: 6, distanceMeters: 500.0)
+        XCTAssertEqual(prompt500, "after_500m_roundabout")
+
+        // Roundabout entrance at 50m
+        let prompt50 = engine.resolvePromptId(maneuverType: 6, distanceMeters: 50.0)
+        XCTAssertEqual(prompt50, "after_50m_roundabout")
+
+        // Immediate Roundabout Exit 1
+        let promptExit1 = engine.resolvePromptId(maneuverType: 6, distanceMeters: 20.0, priority: 0, exitNumber: 1)
+        XCTAssertEqual(promptExit1, "roundabout_exit_1")
+
+        // Immediate Roundabout Exit 3
+        let promptExit3 = engine.resolvePromptId(maneuverType: 6, distanceMeters: 20.0, priority: 0, exitNumber: 3)
+        XCTAssertEqual(promptExit3, "roundabout_exit_3")
+    }
 }

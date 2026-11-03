@@ -25,10 +25,15 @@ public final class SiroNavController: NSObject, @unchecked Sendable, NavigationE
     public weak var listener: SiroNavListener?
 
     private(set) public var isNavigating = false
+
+    public var activeRoute: NavRoute? {
+        return engine.activeRoute
+    }
     private(set) public var lastTripTotals: NavTripTotals?
     private(set) public var currentInstruction: NavInstructionEvent?
     private(set) public var currentProgress: NavProgressEvent?
     private(set) public var activeError: String?
+    private(set) public var tripStartTime: Date?
 
     public init(config: NavConfig) {
         self.config = config
@@ -47,6 +52,7 @@ public final class SiroNavController: NSObject, @unchecked Sendable, NavigationE
             self.tripMeter = nil
         }
 
+        tripStartTime = Date()
         let started = engine.startNavigation(route: route)
         if started {
             isNavigating = true

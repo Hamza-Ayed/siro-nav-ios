@@ -5,6 +5,7 @@
 /private/tmp/siro-nav-ios/Sources/SiroNav/NavRouteSimulator.swift
 /private/tmp/siro-nav-ios/Sources/SiroNav/NavigationEngine.swift
 /private/tmp/siro-nav-ios/Sources/SiroNav/PolylineCodec.swift
+/private/tmp/siro-nav-ios/Sources/SiroNav/RoutingClient.swift
 /private/tmp/siro-nav-ios/Sources/SiroNav/SiroNavController.swift
 /private/tmp/siro-nav-ios/Sources/SiroNav/SiroNavView.swift
 /private/tmp/siro-nav-ios/Sources/SiroNav/TelemetryAndBilling.swift

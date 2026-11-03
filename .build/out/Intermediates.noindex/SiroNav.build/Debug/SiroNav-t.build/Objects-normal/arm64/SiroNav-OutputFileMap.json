@@ -76,6 +76,16 @@
     "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.swiftdeps",
     "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec~partial.swiftmodule"
   },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/RoutingClient.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/RoutingClient~partial.swiftmodule"
+  },
   "/private/tmp/siro-nav-ios/Sources/SiroNav/SiroNavController.swift" : {
     "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.swiftconstvalues",
     "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.d",
