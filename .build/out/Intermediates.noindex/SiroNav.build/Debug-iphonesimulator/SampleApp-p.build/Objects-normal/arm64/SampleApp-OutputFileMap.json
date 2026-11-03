@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/SampleApp-primary.dia",
+    "emit-module-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/SampleApp-primary-emit-module.d",
+    "emit-module-diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/SampleApp-primary-emit-module.dia",
+    "pch" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/SampleApp-primary-Bridging-header.pch",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/SampleApp-primary.swiftdeps"
+  },
+  "/private/tmp/siro-nav-ios/SampleApp/Sources/AppDelegate.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug-iphonesimulator/SampleApp-p.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  }
+}

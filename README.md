@@ -96,3 +96,33 @@ swift test
 
 ## 📄 License
 MIT License. © 2026 Siro Platform & Hamza Ayed.
+
+## Sample App on iOS (تطبيق المثال المباشر)
+
+A complete production sample app is included inside `SampleApp/` showcasing:
+- Real-time 3D camera tracking GPS Heading (`pitch: 50.0`, dynamic smart speed zoom)
+- Directional SVG Chevron Driver Marker with white halo casing
+- Fully localized Turn-by-Turn HUD in Arabic and English
+- Real road network routing via `RoutingClient` (respects circles, roundabouts, and turns)
+- Live Meter Tariff calculations with developer customization (`NavFareConfig`):
+  - Base starting fare
+  - Price per KM
+  - Price per waiting minute (speed < 5 km/h)
+  - Custom currency (JOD, SAR, AED, USD)
+- 93 Studio recorded Arabic audio guidance clips (`NavVoiceEngine`)
+
+```swift
+import SiroNav
+
+// 1. Configure Navigation and Billing
+let fare = NavFareConfig(
+    baseFare: 0.50,            // Base starting price
+    perKilometer: 0.35,        // Price per KM
+    perWaitingMinute: 0.05,    // Price per minute waiting
+    currency: "JOD",           // Custom currency (JOD, SAR, AED, etc.)
+    waitingSpeedKmh: 5.0
+)
+
+// 2. Start navigation with custom route
+controller.startNavigation(route: route, fare: fare)
+```

@@ -1,0 +1,14 @@
+Target dependency graph (5 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'SiroNav-product' in project 'SiroNav'
+➜ Explicit dependency on target 'SampleApp-product' in project 'SiroNav'
+➜ Explicit dependency on target 'SiroNav' in project 'SiroNav'
+➜ Explicit dependency on target 'SiroNav_SiroNav' in project 'SiroNav'
+Target 'SampleApp-product' in project 'SiroNav'
+➜ Explicit dependency on target 'SiroNav' in project 'SiroNav'
+Target 'SiroNav-product' in project 'SiroNav'
+➜ Explicit dependency on target 'SiroNav' in project 'SiroNav'
+➜ Explicit dependency on target 'SiroNav_SiroNav' in project 'SiroNav'
+Target 'SiroNav' in project 'SiroNav'
+➜ Explicit dependency on target 'SiroNav_SiroNav' in project 'SiroNav'
+Target 'SiroNav_SiroNav' in project 'SiroNav' (no dependencies)

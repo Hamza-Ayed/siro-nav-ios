@@ -23,6 +23,11 @@ let package = Package(
                 .process("Resources")
             ]
         ),
+        .executableTarget(
+            name: "SampleApp",
+            dependencies: ["SiroNav"],
+            path: "SampleApp/Sources"
+        ),
         .testTarget(
             name: "SiroNavTests",
             dependencies: ["SiroNav"],

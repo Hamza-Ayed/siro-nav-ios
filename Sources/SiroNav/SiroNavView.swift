@@ -146,7 +146,10 @@ public final class SiroNavView: UIView {
         bottomCard.addSubview(fareContainer)
 
         fareMetricsLabel.textColor = UIColor(red: 251/255, green: 191/255, blue: 36/255, alpha: 1.0) // Amber gold
-        fareMetricsLabel.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        fareMetricsLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        fareMetricsLabel.adjustsFontSizeToFitWidth = true
+        fareMetricsLabel.minimumScaleFactor = 0.75
+        fareMetricsLabel.textAlignment = .center
         fareMetricsLabel.translatesAutoresizingMaskIntoConstraints = false
         fareContainer.addSubview(fareMetricsLabel)
 
