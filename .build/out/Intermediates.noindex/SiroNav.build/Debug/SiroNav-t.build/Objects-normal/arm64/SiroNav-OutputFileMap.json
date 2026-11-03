@@ -1,0 +1,109 @@
+{
+  "" : {
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNav-primary.dia",
+    "emit-module-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNav-primary-emit-module.d",
+    "emit-module-diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNav-primary-emit-module.dia",
+    "pch" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNav-primary-Bridging-header.pch",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNav-primary.swiftdeps"
+  },
+  "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/resource_bundle_accessor~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/EventsAndSchedulers.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/EventsAndSchedulers~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/MapMatcher.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/MapMatcher~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/Models.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/NavigationEngine.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/PolylineCodec.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/PolylineCodec~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/SiroNavController.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavController~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/SiroNavView.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/SiroNavView~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/TelemetryAndBilling.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/TelemetryAndBilling~partial.swiftmodule"
+  },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/VoiceEngine.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/VoiceEngine~partial.swiftmodule"
+  }
+}
