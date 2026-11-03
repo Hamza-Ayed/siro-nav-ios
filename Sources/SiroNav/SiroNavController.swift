@@ -84,14 +84,12 @@ public final class SiroNavController: NSObject, @unchecked Sendable, NavigationE
         case .instruction(let inst):
             currentInstruction = inst
             listener?.onInstructionChanged(inst)
-            // Voice announcement mapping
-            if inst.distanceMeters <= 50.0 {
-                if inst.maneuverType == 1 { voiceEngine.playPrompt(id: "now_turn_right") }
-                else if inst.maneuverType == -1 { voiceEngine.playPrompt(id: "now_turn_left") }
-            } else if inst.distanceMeters <= 200.0 {
-                if inst.maneuverType == 1 { voiceEngine.playPrompt(id: "after_200m_turn_right") }
-                else if inst.maneuverType == -1 { voiceEngine.playPrompt(id: "after_200m_turn_left") }
-            }
+            voiceEngine.handleInstruction(
+                maneuverType: inst.maneuverType,
+                distanceMeters: inst.distanceMeters,
+                priority: inst.priority,
+                exitNumber: inst.exitNumber
+            )
         case .progress(let prog):
             currentProgress = prog
             listener?.onProgressUpdated(prog)

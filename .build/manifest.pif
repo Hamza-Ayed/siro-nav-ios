@@ -5,11 +5,11 @@
       "name" : "SiroNav",
       "path" : "/private/tmp/siro-nav-ios",
       "projects" : [
-        "5dfab37666575501d7a486d130a02d160f5be1e190f898bc5ed9b185844078ed",
+        "94971a1bc6842baf9d1a63e23c4bf7761cbb2437a55062e5ee6f0aa9b1cc8f2e",
         "4bc133361dd1916cbdcafc9c32bcb435f5c84efd484b267f07c651d62d81d92b"
       ]
     },
-    "signature" : "ef741740909c57b492144bfac2e97d7a3ee4e7b3fe0843e1dccc5f1b25838b6c",
+    "signature" : "abf293c5c62cf1a87a23143c3553e7f55dbe6ad13fb5c1b4d79e7217782b5a75",
     "type" : "workspace"
   },
   {
@@ -981,10 +981,210 @@
             "type" : "file"
           },
           {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/arrow.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/arrow.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-bakery.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-bakery.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_100",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-bank.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-bank.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_101",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-cafe.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-cafe.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_102",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-car.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-car.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_103",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-clinic.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-clinic.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_104",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-fuel.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-fuel.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_105",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-generic.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-generic.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_106",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-government.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-government.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_107",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-gym.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-gym.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_108",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-home.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-home.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_109",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-hospital.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-hospital.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_110",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-hotel.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-hotel.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_111",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-library.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-library.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_112",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-mall.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-mall.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_113",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-office.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-office.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_114",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-park.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-park.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_115",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-pharmacy.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-pharmacy.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_116",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-restaurant.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-restaurant.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_117",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-salon.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-salon.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_118",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-school.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-school.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_119",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-shop.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-shop.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_120",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-supermarket.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-supermarket.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_121",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-tourism.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-tourism.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
+            "fileType" : "file",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_122",
+            "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-worship.svg",
+            "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav/Resources/map_icons/badge-worship.svg",
+            "sourceTree" : "<absolute>",
+            "type" : "file"
+          },
+          {
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_0",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_0",
                 "name" : "EventsAndSchedulers.swift",
                 "path" : "EventsAndSchedulers.swift",
                 "sourceTree" : "<group>",
@@ -992,7 +1192,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_1",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_1",
                 "name" : "MapMatcher.swift",
                 "path" : "MapMatcher.swift",
                 "sourceTree" : "<group>",
@@ -1000,7 +1200,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_2",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_2",
                 "name" : "Models.swift",
                 "path" : "Models.swift",
                 "sourceTree" : "<group>",
@@ -1008,7 +1208,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_3",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_3",
                 "name" : "NavRouteSimulator.swift",
                 "path" : "NavRouteSimulator.swift",
                 "sourceTree" : "<group>",
@@ -1016,7 +1216,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_4",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_4",
                 "name" : "NavigationEngine.swift",
                 "path" : "NavigationEngine.swift",
                 "sourceTree" : "<group>",
@@ -1024,7 +1224,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_5",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_5",
                 "name" : "PolylineCodec.swift",
                 "path" : "PolylineCodec.swift",
                 "sourceTree" : "<group>",
@@ -1032,7 +1232,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_6",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_6",
                 "name" : "SiroNavController.swift",
                 "path" : "SiroNavController.swift",
                 "sourceTree" : "<group>",
@@ -1040,7 +1240,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_7",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_7",
                 "name" : "SiroNavView.swift",
                 "path" : "SiroNavView.swift",
                 "sourceTree" : "<group>",
@@ -1048,7 +1248,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_8",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_8",
                 "name" : "TelemetryAndBilling.swift",
                 "path" : "TelemetryAndBilling.swift",
                 "sourceTree" : "<group>",
@@ -1056,14 +1256,14 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_9",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_9",
                 "name" : "VoiceEngine.swift",
                 "path" : "VoiceEngine.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123",
             "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav",
             "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav",
             "sourceTree" : "<absolute>",
@@ -1073,7 +1273,7 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_0",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_0",
                 "name" : "EventsAndSchedulers.swift",
                 "path" : "EventsAndSchedulers.swift",
                 "sourceTree" : "<group>",
@@ -1081,7 +1281,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_1",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_1",
                 "name" : "MapMatcher.swift",
                 "path" : "MapMatcher.swift",
                 "sourceTree" : "<group>",
@@ -1089,7 +1289,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_2",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_2",
                 "name" : "Models.swift",
                 "path" : "Models.swift",
                 "sourceTree" : "<group>",
@@ -1097,7 +1297,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_3",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_3",
                 "name" : "NavRouteSimulator.swift",
                 "path" : "NavRouteSimulator.swift",
                 "sourceTree" : "<group>",
@@ -1105,7 +1305,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_4",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_4",
                 "name" : "NavigationEngine.swift",
                 "path" : "NavigationEngine.swift",
                 "sourceTree" : "<group>",
@@ -1113,7 +1313,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_5",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_5",
                 "name" : "PolylineCodec.swift",
                 "path" : "PolylineCodec.swift",
                 "sourceTree" : "<group>",
@@ -1121,7 +1321,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_6",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_6",
                 "name" : "SiroNavController.swift",
                 "path" : "SiroNavController.swift",
                 "sourceTree" : "<group>",
@@ -1129,7 +1329,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_7",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_7",
                 "name" : "SiroNavView.swift",
                 "path" : "SiroNavView.swift",
                 "sourceTree" : "<group>",
@@ -1137,7 +1337,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_8",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_8",
                 "name" : "TelemetryAndBilling.swift",
                 "path" : "TelemetryAndBilling.swift",
                 "sourceTree" : "<group>",
@@ -1145,14 +1345,14 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_9",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_9",
                 "name" : "VoiceEngine.swift",
                 "path" : "VoiceEngine.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99",
+            "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124",
             "name" : "/private/tmp/siro-nav-ios/Sources/SiroNav",
             "path" : "/private/tmp/siro-nav-ios/Sources/SiroNav",
             "sourceTree" : "<absolute>",
@@ -1174,13 +1374,13 @@
         "2cf4cd34fd11725cce0ba40d873c1bb40e37111011a23588bf73da8644bd85bb",
         "c45b33d142e162d84a38eeabca2457daad21970fcc05aa42e5256ed9685036a0",
         "d404f5b4c65db105c94f6b817829a1c1781caeb5f1c47a7787177264dbbde318",
-        "4e0fd6a7d1464b46ee1d416f9783511343edab656e959ac6e1db497a4255fda2",
-        "b1faba5819f18085757f76935b6f8e03d49e8f3ef421ccd99844e427e026266c",
-        "36e8bfa36fb09a97e8534477ab0c5f7dd26e8441c5201b75602c4d19feeec070",
+        "1e57f201264a1b4587b19aeca1e3160396f90647eb3ffb30c76d931f673924e2",
+        "a193e6ebcf5a9742e0c699b209ebf074b6de77bc3396902bc11429e936147783",
+        "c6d82d318073570b504d01b85023becad50e43ed4cde7e5974e2b244d50945be",
         "be26a6a8bff52f94b686bf7cbb7acbd487bc2b9d5e388df18e9a78d3e99c10c6"
       ]
     },
-    "signature" : "5dfab37666575501d7a486d130a02d160f5be1e190f898bc5ed9b185844078ed",
+    "signature" : "94971a1bc6842baf9d1a63e23c4bf7761cbb2437a55062e5ee6f0aa9b1cc8f2e",
     "type" : "project"
   },
   {
@@ -1756,7 +1956,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_0",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_0",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1765,7 +1965,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_1",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_1",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -1774,7 +1974,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_2",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_2",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -1783,7 +1983,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_3",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_3",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -1792,7 +1992,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_4",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_4",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -1801,7 +2001,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_5",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_5",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -1810,7 +2010,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_6",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_6",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -1819,7 +2019,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_7",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_7",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -1828,7 +2028,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_8",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_8",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -1837,7 +2037,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_9",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_123::REF_9",
               "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::9",
               "platformFilters" : [
 
@@ -1874,7 +2074,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "4e0fd6a7d1464b46ee1d416f9783511343edab656e959ac6e1db497a4255fda2",
+    "signature" : "1e57f201264a1b4587b19aeca1e3160396f90647eb3ffb30c76d931f673924e2",
     "type" : "target"
   },
   {
@@ -2870,6 +3070,256 @@
               ],
               "removeHeadersOnCopy" : "false",
               "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::94",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::95",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_100",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::96",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_101",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::97",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_102",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::98",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_103",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::99",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_104",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::100",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_105",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::101",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_106",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::102",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_107",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::103",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_108",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::104",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_109",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::105",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_110",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::106",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_111",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::107",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_112",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::108",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_113",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::109",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_114",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::110",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_115",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::111",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_116",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::112",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_117",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::113",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_118",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::114",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_119",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::115",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_120",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::116",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_121",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::117",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_122",
+              "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0::118",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false",
+              "resourceRule" : "process"
             }
           ],
           "guid" : "PACKAGE-RESOURCE:SiroNav::BUILDPHASE_0",
@@ -2895,7 +3345,7 @@
       "productTypeIdentifier" : "com.apple.product-type.bundle",
       "type" : "standard"
     },
-    "signature" : "b1faba5819f18085757f76935b6f8e03d49e8f3ef421ccd99844e427e026266c",
+    "signature" : "a193e6ebcf5a9742e0c699b209ebf074b6de77bc3396902bc11429e936147783",
     "type" : "target"
   },
   {
@@ -3087,7 +3537,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_0",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_0",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -3096,7 +3546,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_1",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_1",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -3105,7 +3555,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_2",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_2",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -3114,7 +3564,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_3",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_3",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -3123,7 +3573,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_4",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_4",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -3132,7 +3582,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_5",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_5",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -3141,7 +3591,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_6",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_6",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -3150,7 +3600,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_7",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_7",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -3159,7 +3609,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_8",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_8",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -3168,7 +3618,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_9",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_124::REF_9",
               "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::9",
               "platformFilters" : [
 
@@ -3204,7 +3654,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "36e8bfa36fb09a97e8534477ab0c5f7dd26e8441c5201b75602c4d19feeec070",
+    "signature" : "c6d82d318073570b504d01b85023becad50e43ed4cde7e5974e2b244d50945be",
     "type" : "target"
   },
   {
