@@ -49,6 +49,7 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
     private var simTimer: Timer?
     private var fixes: [NavPoint] = []
     private var currentFixIndex = 0
+    private var cachedRouteCoordsJson: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +106,19 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
         <body>
             <div id="map"></div>
             <script>
+                window.console.log = function() {
+                    var msg = Array.from(arguments).join(' ');
+                    if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.siroNavBridge) {
+                        window.webkit.messageHandlers.siroNavBridge.postMessage({ type: 'log', message: msg });
+                    }
+                };
+                window.console.error = function() {
+                    var msg = Array.from(arguments).join(' ');
+                    if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.siroNavBridge) {
+                        window.webkit.messageHandlers.siroNavBridge.postMessage({ type: 'error', message: msg });
+                    }
+                };
+
                 if (maplibregl.getRTLTextPluginStatus() === 'unavailable') {
                     maplibregl.setRTLTextPlugin(
                         'https://unpkg.com/@mapbox/mapbox-gl-rtl-text@0.2.3/mapbox-gl-rtl-text.min.js',
@@ -125,6 +139,71 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
 
                 var vehicleMarker = null;
                 var vehicleEl = null;
+                var cachedRouteCoords = null;
+
+                function renderRouteOnMap() {
+                    if (!cachedRouteCoords || !map) return;
+                    try {
+                        if (!map.isStyleLoaded()) {
+                            return;
+                        }
+                        var source = map.getSource('nav-route-source');
+                        if (!source) {
+                            map.addSource('nav-route-source', {
+                                type: 'geojson',
+                                data: {
+                                    type: 'Feature',
+                                    properties: {},
+                                    geometry: {
+                                        type: 'LineString',
+                                        coordinates: cachedRouteCoords
+                                    }
+                                }
+                            });
+
+                            if (!map.getLayer('nav-route-casing')) {
+                                map.addLayer({
+                                    id: 'nav-route-casing',
+                                    type: 'line',
+                                    source: 'nav-route-source',
+                                    layout: { 'line-join': 'round', 'line-cap': 'round' },
+                                    paint: {
+                                        'line-color': '#FFFFFF',
+                                        'line-width': 12.0,
+                                        'line-opacity': 0.95
+                                    }
+                                });
+                            }
+
+                            if (!map.getLayer('nav-route-line')) {
+                                map.addLayer({
+                                    id: 'nav-route-line',
+                                    type: 'line',
+                                    source: 'nav-route-source',
+                                    layout: { 'line-join': 'round', 'line-cap': 'round' },
+                                    paint: {
+                                        'line-color': '#0071E3',
+                                        'line-width': 7.5,
+                                        'line-opacity': 1.0
+                                    }
+                                });
+                            }
+                            console.log('Route polyline layers added with ' + cachedRouteCoords.length + ' points');
+                        } else {
+                            source.setData({
+                                type: 'Feature',
+                                properties: {},
+                                geometry: {
+                                    type: 'LineString',
+                                    coordinates: cachedRouteCoords
+                                }
+                            });
+                            console.log('Route source updated with ' + cachedRouteCoords.length + ' points');
+                        }
+                    } catch(e) {
+                        console.error('renderRouteOnMap error: ' + e);
+                    }
+                }
 
                 map.on('load', function() {
                     vehicleEl = document.createElement('div');
@@ -139,39 +218,27 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
                     .setLngLat([35.9106, 31.9539])
                     .addTo(map);
 
-                    map.addSource('nav-route-source', {
-                        type: 'geojson',
-                        data: { type: 'Feature', geometry: { type: 'LineString', coordinates: [] } }
-                    });
+                    renderRouteOnMap();
 
-                    map.addLayer({
-                        id: 'nav-route-casing',
-                        type: 'line',
-                        source: 'nav-route-source',
-                        layout: { 'line-join': 'round', 'line-cap': 'round' },
-                        paint: { 'line-color': '#FFFFFF', 'line-width': 10.0 }
-                    });
+                    if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.siroNavBridge) {
+                        window.webkit.messageHandlers.siroNavBridge.postMessage({ type: 'mapReady' });
+                    }
+                });
 
-                    map.addLayer({
-                        id: 'nav-route-line',
-                        type: 'line',
-                        source: 'nav-route-source',
-                        layout: { 'line-join': 'round', 'line-cap': 'round' },
-                        paint: { 'line-color': '#0071E3', 'line-width': 6.5 }
-                    });
+                map.on('styledata', function() {
+                    renderRouteOnMap();
                 });
 
                 function setRoute(coordsJson) {
                     try {
-                        var coords = JSON.parse(coordsJson);
-                        var source = map.getSource('nav-route-source');
-                        if (source) {
-                            source.setData({
-                                type: 'Feature',
-                                geometry: { type: 'LineString', coordinates: coords }
-                            });
+                        var coords = (typeof coordsJson === 'string') ? JSON.parse(coordsJson) : coordsJson;
+                        if (Array.isArray(coords) && coords.length > 0) {
+                            cachedRouteCoords = coords;
+                            renderRouteOnMap();
                         }
-                    } catch(e) {}
+                    } catch(e) {
+                        console.error('setRoute parse error: ' + e);
+                    }
                 }
 
                 function calculateSmartZoom(speed) {
@@ -183,6 +250,9 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
                 }
 
                 function updateVehiclePosition(lat, lng, heading, speed) {
+                    if (cachedRouteCoords && !map.getSource('nav-route-source')) {
+                        renderRouteOnMap();
+                    }
                     if (vehicleMarker) {
                         vehicleMarker.setLngLat([lng, lat]);
                         if (heading >= 0) {
@@ -298,6 +368,7 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
                     }
                     if let data = try? JSONSerialization.data(withJSONObject: coords),
                        let jsonStr = String(data: data, encoding: .utf8) {
+                        self.cachedRouteCoordsJson = jsonStr
                         self.webView.evaluateJavaScript("setRoute('\(jsonStr)');")
                     }
 
@@ -329,6 +400,10 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
                             timestamp: fix.timestamp
                         )
                         self.navController.updateLocation(loc)
+
+                        if self.currentFixIndex <= 5, let jsonStr = self.cachedRouteCoordsJson {
+                            self.webView.evaluateJavaScript("setRoute('\(jsonStr)');")
+                        }
 
                         // Update Vehicle in map view
                         self.webView.evaluateJavaScript("updateVehiclePosition(\(fix.latitude), \(fix.longitude), \(fix.heading), \(fix.speedKmh));")
@@ -390,5 +465,17 @@ class ViewController: UIViewController, SiroNavListener, WKScriptMessageHandler,
     }
 
     // MARK: - WKScriptMessageHandler
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {}
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard let dict = message.body as? [String: Any], let type = dict["type"] as? String else { return }
+        if type == "mapReady" {
+            print("[ViewController] mapReady received")
+            if let jsonStr = self.cachedRouteCoordsJson {
+                self.webView.evaluateJavaScript("setRoute('\(jsonStr)');")
+            }
+        } else if type == "log", let msg = dict["message"] as? String {
+            print("[JS Log] \(msg)")
+        } else if type == "error", let msg = dict["message"] as? String {
+            print("[JS Error] \(msg)")
+        }
+    }
 }
