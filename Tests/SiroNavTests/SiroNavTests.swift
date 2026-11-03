@@ -1,4 +1,5 @@
 import XCTest
+import CoreLocation
 @testable import SiroNav
 
 final class SiroNavTests: XCTestCase {
@@ -85,5 +86,81 @@ final class SiroNavTests: XCTestCase {
 
         let events = tracker.checkCameras(currentPosition: pos, cameras: [cam], overspeedToleranceKmh: 5.0)
         XCTAssertGreaterThanOrEqual(events.count, 1)
+    }
+
+    func testSimulatedTripFlow() {
+        let poly = [
+            NavPoint(latitude: 31.9539, longitude: 35.9106),
+            NavPoint(latitude: 31.9560, longitude: 35.9120),
+            NavPoint(latitude: 31.9580, longitude: 35.9140)
+        ]
+        let step1 = NavStep(
+            index: 0,
+            instruction: "اتجه نحو الشمال على شارع زهران",
+            streetName: "شارع زهران",
+            maneuverType: 0,
+            distanceMeters: 400.0,
+            durationSeconds: 30.0,
+            lat: 31.9560,
+            lng: 35.9120
+        )
+        let route = NavRoute(
+            id: "route_amman_sample",
+            routeName: "طريق تجريبي عمان",
+            polyline: poly,
+            steps: [step1],
+            totalDistanceMeters: 800.0,
+            totalDurationSeconds: 60.0
+        )
+
+        let config = NavConfig(apiKey: "live_test_key_123")
+        let controller = SiroNavController(config: config)
+        let fare = NavFareConfig(baseFare: 0.50, perKilometer: 0.35, perWaitingMinute: 0.05, currency: "JOD")
+
+        final class MockListener: SiroNavListener {
+            var instructionsCount = 0
+            var progressCount = 0
+            var arrived = false
+            var finalTotals: NavTripTotals?
+
+            func onInstructionChanged(_ instruction: NavInstructionEvent) { instructionsCount += 1 }
+            func onProgressUpdated(_ progress: NavProgressEvent) { progressCount += 1 }
+            func onSpeedExceeded(currentSpeed: Double, speedLimit: Double) {}
+            func onCameraApproaching(camera: SpeedCamera, distance: Double) {}
+            func onTripArrived(totals: NavTripTotals) {
+                arrived = true
+                finalTotals = totals
+            }
+            func onError(_ error: String) {}
+        }
+
+        let listener = MockListener()
+        controller.listener = listener
+
+        let started = controller.startNavigation(route: route, fare: fare)
+        XCTAssertTrue(started)
+        XCTAssertTrue(controller.isNavigating)
+
+        let simulator = NavRouteSimulator(route: route, speedKmh: 60.0)
+        let fixes = simulator.generateSimulatedFixes(stepIntervalSeconds: 0.5)
+        XCTAssertGreaterThan(fixes.count, 2)
+
+        for fix in fixes {
+            controller.updateLocation(CLLocation(
+                coordinate: CLLocationCoordinate2D(latitude: fix.latitude, longitude: fix.longitude),
+                altitude: fix.altitude,
+                horizontalAccuracy: fix.accuracy,
+                verticalAccuracy: 5.0,
+                course: fix.heading,
+                speed: (fix.speedKmh / 3.6),
+                timestamp: fix.timestamp
+            ))
+        }
+
+        XCTAssertTrue(listener.progressCount > 0)
+        XCTAssertTrue(listener.arrived)
+        XCTAssertNotNil(listener.finalTotals)
+        XCTAssertGreaterThan(listener.finalTotals!.distanceKm, 0.4)
+        XCTAssertGreaterThan(listener.finalTotals!.fare, 0.50)
     }
 }

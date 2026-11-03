@@ -46,6 +46,16 @@
     "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models.swiftdeps",
     "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/Models~partial.swiftmodule"
   },
+  "/private/tmp/siro-nav-ios/Sources/SiroNav/NavRouteSimulator.swift" : {
+    "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.swiftconstvalues",
+    "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.d",
+    "diagnostics" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.dia",
+    "index-unit-output-path" : "/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.o",
+    "llvm-bc" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.bc",
+    "object" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.o",
+    "swift-dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator.swiftdeps",
+    "swiftmodule" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavRouteSimulator~partial.swiftmodule"
+  },
   "/private/tmp/siro-nav-ios/Sources/SiroNav/NavigationEngine.swift" : {
     "const-values" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.swiftconstvalues",
     "dependencies" : "/private/tmp/siro-nav-ios/.build/out/Intermediates.noindex/SiroNav.build/Debug/SiroNav-t.build/Objects-normal/arm64/NavigationEngine.d",

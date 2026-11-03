@@ -5,11 +5,11 @@
       "name" : "SiroNav",
       "path" : "/private/tmp/siro-nav-ios",
       "projects" : [
-        "becf51c84b251d3701c49a76e2181ea3eec9981b8cc78fb12135a947c5ae6269",
+        "5dfab37666575501d7a486d130a02d160f5be1e190f898bc5ed9b185844078ed",
         "4bc133361dd1916cbdcafc9c32bcb435f5c84efd484b267f07c651d62d81d92b"
       ]
     },
-    "signature" : "5b5767bcc39d4ac8f3d9c64b7041e79d37c5e8a1e99cec8a1b9cfe25fe481cf1",
+    "signature" : "ef741740909c57b492144bfac2e97d7a3ee4e7b3fe0843e1dccc5f1b25838b6c",
     "type" : "workspace"
   },
   {
@@ -1009,6 +1009,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_3",
+                "name" : "NavRouteSimulator.swift",
+                "path" : "NavRouteSimulator.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_4",
                 "name" : "NavigationEngine.swift",
                 "path" : "NavigationEngine.swift",
                 "sourceTree" : "<group>",
@@ -1016,7 +1024,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_4",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_5",
                 "name" : "PolylineCodec.swift",
                 "path" : "PolylineCodec.swift",
                 "sourceTree" : "<group>",
@@ -1024,7 +1032,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_5",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_6",
                 "name" : "SiroNavController.swift",
                 "path" : "SiroNavController.swift",
                 "sourceTree" : "<group>",
@@ -1032,7 +1040,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_6",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_7",
                 "name" : "SiroNavView.swift",
                 "path" : "SiroNavView.swift",
                 "sourceTree" : "<group>",
@@ -1040,7 +1048,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_7",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_8",
                 "name" : "TelemetryAndBilling.swift",
                 "path" : "TelemetryAndBilling.swift",
                 "sourceTree" : "<group>",
@@ -1048,7 +1056,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_8",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_9",
                 "name" : "VoiceEngine.swift",
                 "path" : "VoiceEngine.swift",
                 "sourceTree" : "<group>",
@@ -1090,6 +1098,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_3",
+                "name" : "NavRouteSimulator.swift",
+                "path" : "NavRouteSimulator.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_4",
                 "name" : "NavigationEngine.swift",
                 "path" : "NavigationEngine.swift",
                 "sourceTree" : "<group>",
@@ -1097,7 +1113,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_4",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_5",
                 "name" : "PolylineCodec.swift",
                 "path" : "PolylineCodec.swift",
                 "sourceTree" : "<group>",
@@ -1105,7 +1121,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_5",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_6",
                 "name" : "SiroNavController.swift",
                 "path" : "SiroNavController.swift",
                 "sourceTree" : "<group>",
@@ -1113,7 +1129,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_6",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_7",
                 "name" : "SiroNavView.swift",
                 "path" : "SiroNavView.swift",
                 "sourceTree" : "<group>",
@@ -1121,7 +1137,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_7",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_8",
                 "name" : "TelemetryAndBilling.swift",
                 "path" : "TelemetryAndBilling.swift",
                 "sourceTree" : "<group>",
@@ -1129,7 +1145,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_8",
+                "guid" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_9",
                 "name" : "VoiceEngine.swift",
                 "path" : "VoiceEngine.swift",
                 "sourceTree" : "<group>",
@@ -1158,13 +1174,13 @@
         "2cf4cd34fd11725cce0ba40d873c1bb40e37111011a23588bf73da8644bd85bb",
         "c45b33d142e162d84a38eeabca2457daad21970fcc05aa42e5256ed9685036a0",
         "d404f5b4c65db105c94f6b817829a1c1781caeb5f1c47a7787177264dbbde318",
-        "82c17658071cc42951d6dc70b25f8388243c4524212a8589e4a85d421ff73fea",
+        "4e0fd6a7d1464b46ee1d416f9783511343edab656e959ac6e1db497a4255fda2",
         "b1faba5819f18085757f76935b6f8e03d49e8f3ef421ccd99844e427e026266c",
-        "d2b8987ea9f1b429ce5fa88afe8a350073cced8e77f4642ea7659ea728b97d76",
+        "36e8bfa36fb09a97e8534477ab0c5f7dd26e8441c5201b75602c4d19feeec070",
         "be26a6a8bff52f94b686bf7cbb7acbd487bc2b9d5e388df18e9a78d3e99c10c6"
       ]
     },
-    "signature" : "becf51c84b251d3701c49a76e2181ea3eec9981b8cc78fb12135a947c5ae6269",
+    "signature" : "5dfab37666575501d7a486d130a02d160f5be1e190f898bc5ed9b185844078ed",
     "type" : "project"
   },
   {
@@ -1818,6 +1834,15 @@
 
               ],
               "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_98::REF_9",
+              "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
             }
           ],
           "guid" : "PACKAGE-TARGET:SiroNav::BUILDPHASE_0",
@@ -1849,7 +1874,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "82c17658071cc42951d6dc70b25f8388243c4524212a8589e4a85d421ff73fea",
+    "signature" : "4e0fd6a7d1464b46ee1d416f9783511343edab656e959ac6e1db497a4255fda2",
     "type" : "target"
   },
   {
@@ -3140,6 +3165,15 @@
 
               ],
               "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:siro-nav-ios::MAINGROUP::REF_99::REF_9",
+              "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
             }
           ],
           "guid" : "PACKAGE-TARGET:SiroNav-39628D3FBC7BA949-dynamic::BUILDPHASE_0",
@@ -3170,7 +3204,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "d2b8987ea9f1b429ce5fa88afe8a350073cced8e77f4642ea7659ea728b97d76",
+    "signature" : "36e8bfa36fb09a97e8534477ab0c5f7dd26e8441c5201b75602c4d19feeec070",
     "type" : "target"
   },
   {
