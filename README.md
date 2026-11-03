@@ -1,34 +1,40 @@
 # Siro Nav for iOS (Swift)
-### نظام الملاحة التوجيهية الحية لمنصة خرائط سيرو على iOS
+### حزمة الملاحة التوجيهية الحية لنظام iOS (Native Swift • iOS 14+)
 
 [![Platform](https://img.shields.io/badge/Platform-iOS%2014.0%2B-blue.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange.svg)](https://swift.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Maps](https://img.shields.io/badge/Maps-Siro%20Limestone%20Vector-purple.svg)](https://map.intaleqapp.com)
 
-In-app turn-by-turn navigation on **Siro Maps**, tailored for ride-hailing and delivery apps. The driver never leaves your app: the route, map matching, Arabic voice guidance, and trip meter all run seamlessly natively in Swift.
-
----
-
-## 🚀 Key Features / المميزات الرئيسية
-
-1. **Sub-second Map Matching**: High-performance forward-window map snapping onto route polyline with continuous off-route deviation tracking and auto-rerouting.
-2. **Offline Bundled Arabic Voice Engine**: 93 pre-baked studio audio prompts in Arabic (`ar`) covering turns, distance alerts, speed limits, fixed speed cameras, and ride phases.
-3. **Trip Meter & Tariff Engine**: Built-in meter for distance (in km) and waiting minutes (below speed threshold), auto-calculating fare with custom tariffs (JOD/SAR/USD).
-4. **Speed Camera & Radar Warnings**: Lookahead detection (500m / 300m) for fixed and mobile radars with overspeed tolerance enforcement.
-5. **Drop-in UI Component (`SiroNavView`)**: Native Swift HUD overlay with maneuver banners, distance counters, dynamic speed badge, and ride controls.
-6. **Commercial API Licensing**: Enterprise API key gated licensing with automatic telemetry probe collector for fleet intelligence.
+حزمة ملاحة أصلية عالية الأداء مبنية بلغة **Swift** لنظام iOS، مخصصة لتطبيقات النقل الذكي والتوصيل (Ride-Hailing & Delivery). توفر تجربة ملاحة متكاملة داخل التطبيق على نمط خرائط سيرو (Siro Limestone 3D) مع الصوت العربي المسجل استوديو، التوجيه الذكي للدواوير والمخارج، وعداد احتساب الأجرة والانتظار اللحظي.
 
 ---
 
-## 📦 Installation / التثبيت
+## 📸 معاينة حية للمحرك على محاكي الآيفون (Live iOS Simulator Visuals)
+
+<div align="center">
+  <img src="docs/media/screen_ios_simulator_roundabout.png" width="370" alt="Siro Nav iOS Roundabout Polyline" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/media/screen_ios_simulator_fare_progression.png" width="370" alt="Siro Nav iOS Fare Progression HUD" />
+</div>
+
+- **خط المسار الأزرق الملاحي (Blue Route Polyline)**: مع إطار أبيض عالي التباين بسماكة 12px يلتف بسلاسة مع مسار الدوار والتقاطعات.
+- **توجيه الدواوير الصوتي الذكي**: استخراج رقم المخرج ونطقه بالصوت الاستوديو العربي (`عند الدوار، اسلك المخرج السادس إلى شارع الكلية العلمية الإسلامية`).
+- **ماركر السائق وسهم التوجيه**: قرص دائري أبيض بظل ثلاثي الأبعاد مع سهم ملاحة أزرق يتجه فورياً مع زاوية الـ Heading.
+- **لوحة الأجرة التراكمية المباشرة**: احتساب فتحة العداد، الكيلومترات، ودقائق الانتظار عند التوقف أو السرعة البطيئة.
+- **عداد السرعة المرتفع**: شارة دائرية بارزة واضحة للسائق أثناء القيادة مع حلقة حمراء تحذيرية.
+
+---
+
+## 📦 التثبيت (Installation)
 
 ### Swift Package Manager (SPM)
-In Xcode, go to **File > Add Package Dependencies...** and enter the repository URL:
+في Xcode، اذهب إلى **File > Add Package Dependencies...** وأدخل رابط المستودع:
 ```text
 https://github.com/Hamza-Ayed/siro-nav-ios.git
 ```
 
-Or add to your `Package.swift`:
+أو أضف إلى ملف `Package.swift`:
 ```swift
 dependencies: [
     .package(url: "https://github.com/Hamza-Ayed/siro-nav-ios.git", from: "0.1.0")
@@ -42,87 +48,86 @@ pod 'SiroNav', :git => 'https://github.com/Hamza-Ayed/siro-nav-ios.git'
 
 ---
 
-## 🛠️ Quick Start / دليل البدء السريع
+## ⚡ البدء السريع في ٥ أسطر (Quick Start)
+
+### ١. إعداد المتحكم وتحديد تسعيرة الرحلة للمطور (Fare Config)
 
 ```swift
 import SiroNav
 import CoreLocation
 
-// 1. Initialize Controller with API Key
+// تهيئة المتحكم مع مفتاح منصة سيرو
 let config = NavConfig(
     apiKey: "YOUR_SIRO_API_KEY",
     baseUrl: "https://map-saas.intaleqapp.com/api"
 )
 let navController = SiroNavController(config: config)
 
-// 2. Start Turn-by-Turn Navigation with Ride Fare Config
+// خيارات التسعير والفوترة للمطور
 let fareConfig = NavFareConfig(
-    baseFare: 0.50,
-    perKilometer: 0.35,
-    perWaitingMinute: 0.05,
-    currency: "JOD"
+    baseFare: 0.50,            // فتحة العداد المبدئية
+    perKilometer: 0.35,        // سعر الكيلومتر
+    perWaitingMinute: 0.05,    // سعر دقيقة الانتظار (عند سرعة < 5 كم/س)
+    currency: "JOD",           // العملة: JOD, SAR, AED, USD
+    waitingSpeedKmh: 5.0
 )
 
-let started = navController.startNavigation(route: activeRoute, fare: fareConfig)
-if !started {
-    print("Navigation start failed: \(navController.activeError ?? "Unknown error")")
-}
+// بدء الملاحة
+navController.startNavigation(route: activeRoute, fare: fareConfig)
+```
 
-// 3. Feed GPS updates (e.g. from CLLocationManager)
-func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    guard let location = locations.last else { return }
-    navController.updateLocation(location)
-}
+### ٢. إضافة واجهة الملاحة الجاهزة (`SiroNavView`)
 
-// 4. Present Drop-in HUD View
+```swift
 let navView = SiroNavView(frame: view.bounds)
-navView.onExit = {
+navView.locale = "ar"              // لغة الواجهة والصوت (ar / en)
+navView.showFareMetrics = true     // إظهار شريط الأجرة والمسافة للمطور
+
+navView.onExit = { [weak self] in
     navController.stopNavigation()
     navView.removeFromSuperview()
 }
 view.addSubview(navView)
 ```
 
+### ٣. ربط الأحداث وتحديث الموقع من الـ GPS
+
+```swift
+navController.listener = self
+
+// تحديث الموقع عند وصول إشارة GPS
+func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    guard let location = locations.last else { return }
+    navController.updateLocation(location)
+}
+
+// الاستماع لأحداث الملاحة
+func onInstructionChanged(_ instruction: NavInstructionEvent) {
+    navView.updateInstruction(instruction)
+}
+
+func onProgressUpdated(_ progress: NavProgressEvent) {
+    navView.updateProgress(
+        progress,
+        totals: navController.lastTripTotals,
+        startTime: navController.tripStartTime
+    )
+}
+
+func onTripArrived(totals: NavTripTotals) {
+    print("تم الوصول! إجمالي الأجرة: \(totals.fareLabel)")
+}
+```
+
 ---
 
-## 🧪 Testing
+## 🧪 تشغيل الاختبارات الآلية (Unit Tests)
 
-Run test suite:
 ```bash
 swift test
 ```
 
 ---
 
-## 📄 License
-MIT License. © 2026 Siro Platform & Hamza Ayed.
-
-## Sample App on iOS (تطبيق المثال المباشر)
-
-A complete production sample app is included inside `SampleApp/` showcasing:
-- Real-time 3D camera tracking GPS Heading (`pitch: 50.0`, dynamic smart speed zoom)
-- Directional SVG Chevron Driver Marker with white halo casing
-- Fully localized Turn-by-Turn HUD in Arabic and English
-- Real road network routing via `RoutingClient` (respects circles, roundabouts, and turns)
-- Live Meter Tariff calculations with developer customization (`NavFareConfig`):
-  - Base starting fare
-  - Price per KM
-  - Price per waiting minute (speed < 5 km/h)
-  - Custom currency (JOD, SAR, AED, USD)
-- 93 Studio recorded Arabic audio guidance clips (`NavVoiceEngine`)
-
-```swift
-import SiroNav
-
-// 1. Configure Navigation and Billing
-let fare = NavFareConfig(
-    baseFare: 0.50,            // Base starting price
-    perKilometer: 0.35,        // Price per KM
-    perWaitingMinute: 0.05,    // Price per minute waiting
-    currency: "JOD",           // Custom currency (JOD, SAR, AED, etc.)
-    waitingSpeedKmh: 5.0
-)
-
-// 2. Start navigation with custom route
-controller.startNavigation(route: route, fare: fare)
-```
+## 📄 الترخيص (License)
+MIT License. © 2026 Siro Maps & Hamza Ayed.
